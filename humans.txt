@@ -1,0 +1,17 @@
+# humanstxt.org
+
+# TEAM
+
+Tak til Magnus for aldrig at give op på projektet. Han har ydet en stor indsats.
+iconer: https://www.freepik.com
+Hjælp til programmering: Youtube.com
+
+# TEKNOLOGI
+
+## Software
+
+Der er brugt HTML og CSS til mark-up af hjemmesiden
+
+## Simply.com
+
+Hjemmesiden er hosted med hjælp af Simply 

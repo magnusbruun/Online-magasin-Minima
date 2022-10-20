@@ -1,0 +1,650 @@
+ * {
+    margin: 0;
+    padding: 0px;
+    background-color: white;
+    color: #313131;
+    font-family: 'Catamaran', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 40px 40px;
+}
+
+/*Menubar*/
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 5%;
+    width: 100px;
+}
+
+nav ul {
+    float: right;
+    font-size: 20px;
+    margin-right: 50px;
+    padding-top: 20px
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 14px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: white;
+    transition: all 0.5s ease 0s;
+    background-color: #4D5180;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 180px;
+}
+
+nav ul li ul li a {
+    padding: 8px 14px;
+    font-size: 18px; 
+}
+
+nav ul li ul li a:hover {
+    color: white;
+    transition: all 0.5s ease 0s;
+}
+
+/*forside-billede*/
+.forside-billede {
+    background-image: url(../img/Forside/Minima\ forsidebillede1.jpg);
+    padding: 350px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.forside-billede h1 {
+    font-size: 50px;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    bottom: 220px;
+    color: white;
+    cursor: default;
+}
+
+.forside-billede a {
+    border-color: transparent;
+    background-color: #4D5180;
+    border-radius: 5px;
+    text-decoration: none;
+    position: absolute;
+    color:white;
+    display: grid;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: 0px;
+    place-items: center;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.forside-billede a:hover {
+    background-color: white;
+    color: #4D5180;
+    border-radius: 20px;
+    transition: all 0.5s ease 0s;
+}
+
+/*mainSection*/
+.mainSection h2 {
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    margin-top: 50px;
+    cursor: default; 
+    color: #4D5180;
+}
+
+.mainSection p {
+    border: 3px solid transparent;
+    position: absolute;
+    line-height: 2;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.secondSection p {
+    border: 2px solid transparent;
+    position: relative;
+    color: black;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.link-HVM {
+    color: #4D5180;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.link-HVM:hover {
+    text-decoration: underline;
+    color: #7276a1;
+    transition: all 0.5s ease 0s;
+}
+
+/*SoMe iconer*/
+.some-iconer {
+    font-size: 20px;
+    position: relative;
+    margin-left: 75%;
+    margin-right: 5%;
+}
+
+.some-iconer p {
+    position: relative;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+}
+
+.some-iconer ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.some-iconer li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.some-iconer a {
+    text-decoration: none;
+}    
+
+.some-iconer img {
+    border-radius: 20px;
+    cursor: pointer;
+    width: 40px;
+}
+
+/*footer*/
+.footer-forside {
+    margin-top: auto;
+    margin-left: 0;
+    padding: 20px;
+    background-color: #4D5180;
+}
+
+.footer-forside p {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    cursor: default;
+}
+
+.footer-logo-forside {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: transparent;
+    width: 60px;
+}
+
+
+/*Hvad er minimalisme (Artikel)*/
+
+.logo-HVM {
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 5%;
+}
+
+/*mainSection*/
+.mainOverskrift-HVM h1 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: #4D5180;
+    cursor: default;
+    padding-top: 50px;
+}
+
+.mainSection-HVM p {
+    position: absolute;
+    line-height: 2;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+}
+
+/*some-iconer*/
+.some-iconer-HVM {
+    font-size: 20px;
+    position: sticky;
+    top: 150px;
+    margin-left: 75%;
+    margin-right: 5%;
+}
+
+.some-iconer-HVM p {
+    position: relative;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+}
+
+.some-iconer-HVM ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.some-iconer-HVM li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.some-iconer-HVM a {
+    text-decoration: none;
+}
+
+.some-iconer-HVM img {
+    border-radius: 20px;
+    cursor: pointer;
+    width: 40px;
+}
+
+/*artikel-billede*/
+.artikel-billede {
+    position: static;
+    margin-top: 20px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.under-billede {
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.artikel-billede-2 {
+    position: static;
+    display: flex;
+    justify-content: center;
+}
+
+.artikel-billede-2 img {
+    width: 400px
+}
+
+.under-billede-2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px;
+    line-height: 2;
+    font-weight: 300;
+}
+
+.inspiration {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.inspiration a {
+    background-color:#4D5180;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.inspiration a:hover {
+    background-color:#5e64a7;
+    border-radius: 20px;
+    transition: all 0.5s ease 0s;
+}
+
+
+/*Footer*/
+.footer-HVM {
+    margin-top: auto;
+    margin-left: 0;
+    padding: 20px;
+    background-color: #4D5180;
+}
+
+.footer-HVM p {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    cursor: default;
+}
+
+.footer-logo-HVM {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: transparent;
+    width: 60px;
+}
+
+
+/*Video (Artikel)*/
+/*forsidebillede*/
+.forside-billede-video {
+    background-image: url(../img/Artikel-3/IMG_4267-2.jpg);
+    background-size: 100%;
+    padding: 200px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.forside-billede-video h1 {
+    font-size: 50px;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    bottom: 100px;
+    color: black;
+    cursor: default;
+}
+
+/*mainSection*/
+.mainSection-video h2 {
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    margin-top: 60px;
+    cursor: default; 
+    color: #4D5180;
+}
+
+.mainSection-video p {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: 20px;
+    line-height: 2;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10px;
+    font-weight: 300;
+    line-height: 2;
+}
+
+/*SoMe iconer*/
+.some-iconer-video {
+    font-size: 20px;
+    position: relative;
+    margin-left: 75%;
+    margin-right: 5%;
+}
+
+.some-iconer-video p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.some-iconer-video ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.some-iconer-video li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.some-iconer-video a {
+    text-decoration: none;
+}    
+
+.some-iconer-video img {
+    cursor: pointer;
+    border-radius: 20px;
+    width: 40px;
+}
+
+.yt-video {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px;
+}
+
+.yt-video iframe {
+    width: 100%;
+    height: 400px;
+    border: transparent;
+}
+
+.yt-video h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    color: #4D5180;
+}
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 50px;
+    font-weight: 300;
+    line-height: 2;
+}
+
+/*footer*/
+.footer-video {
+    margin-top: auto;
+    margin-left: 0;
+    padding: 20px;
+    background-color: #4D5180;
+}
+
+.footer-video p {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    cursor: default;
+}
+
+
+/*Om Minima*/
+.logo-Om {
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 5%;
+}
+
+/*mainSection*/
+.mainOverskrift-Om h1 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: #4D5180;
+    cursor: default;
+    padding-top: 50px;
+}
+
+.mainSection-Om p {
+    position: absolute;
+    line-height: 2;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    line-height: 2;
+}
+
+/*some-iconer*/
+.some-iconer-Om {
+    font-size: 20px;
+    position: sticky;
+    top: 150px;
+    margin-left: 75%;
+    margin-right: 5%;
+}
+
+.some-iconer-Om p {
+    position: relative;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+}
+
+.some-iconer-Om ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.some-iconer-Om li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+.some-iconer-Om a {
+    text-decoration: none;
+}
+
+.some-iconer-Om img {
+    border-radius: 20px;
+    cursor: pointer;
+    width: 40px;
+}
+
+/*artikel-billede*/
+.under-section {
+    display: flex;
+    justify-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10px;
+    font-weight: 300;
+    line-height: 2;
+}
+
+/*footer*/
+.footer-Om {
+    margin-top: auto;
+    margin-left: 0;
+    padding: 20px;
+    background-color: #4D5180;
+}
+
+.footer-Om p {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    cursor: default;
+}
+
+.logo-Om {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: transparent;
+    width: 60px;
+}
+
+.inspiration-Om {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.inspiration-Om button {
+    background-color: #4D5180;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.inspiration-Om a {
+    background-color:#4D5180;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.inspiration-Om a:hover {
+    background-color: #5e64a7;
+    border-radius: 20px;
+    transition: all 0.5s ease 0s;
+}
+
